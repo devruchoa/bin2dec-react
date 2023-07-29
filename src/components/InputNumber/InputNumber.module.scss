@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    &__input {
+        border: transparent;
+        width: 300px;
+        height: 30px;
+        padding: 0 10px;
+        border-radius: 10px;
+    }
+
+    &__submit {
+        width: 100px;
+        padding: 4px;
+        border: 2px solid $color-border;
+        border-radius: 5px;
+        background-color: transparent;
+        color: $color-font;
+        font-weight: bold;
+        &:hover {
+            cursor: pointer;
+            border:2px solid $color-font;
+            color: $color-border;
+        }
+    }
+
+    &__output{
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-bottom: 3px solid $color-font;
+    }
+}
